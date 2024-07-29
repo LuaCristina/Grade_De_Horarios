@@ -9,7 +9,7 @@ class Aula:
         self.disciplina = disciplina
         self.professor = professor
         self.periodo = periodo
-        self.dia = diacd
+        self.dia = dia
         self.horario = horario
 
     def __repr__(self):
@@ -111,6 +111,9 @@ def main():
         # Converter as aulas para um DataFrame
         df = pd.DataFrame([vars(aula) for aula in horario.cromossomo])
         print(tabulate(df, headers='keys', tablefmt='psql'))
+
+
+
 
     # print("Horário Inicial 1:")
     # print(tabulate(horario_inicial_1.to_dataframe(), headers='keys', tablefmt='psql'))
